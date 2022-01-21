@@ -1,10 +1,13 @@
+*{
+padding: 0px;
+margin: 0px;
+}
 body{
 margin: 2px;
 padding: 0px;
-background-image: url(images/white\ bg.png);
+/*background-image: url(images/white\ bg.png);*/
 }
 .navigation{
-position: relative;
 background-color:#282945;
 display:grid;
 grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
@@ -27,11 +30,146 @@ border-radius: 10px;
 .navigation .nav-icons li a:hover{
 transition: 1s;
    background-color: #354858 ;
-
+   color: #87b1f0;
+    
 
 }
+ 
 .navigation .nav-icons{
 margin-top: 30px;
 }
 /*nav bar end---------------------------------------------------------------------*/
-/*media for 
+@media (max-width:768px){
+   .navigation .nav-icons{
+height: 50px;
+   }
+   .navigation .logo img{
+ width: 100px;
+ height: 100;
+ justify-self: center;
+   }
+   .navigation {
+      justify-content: center;
+   }
+   .navigation .nav-icons li a{
+      color: #d3d4e6;
+      font-size: 20px;
+      text-align: center;
+      justify-self: center;
+      padding-left: 20px;
+      padding-top: 10px;
+      padding-bottom: 10;
+      padding-right: 20px;
+      text-transform: uppercase;
+      margin-left: 30px;
+      border-radius: 10px;
+   }
+   .nav-icons{
+      background-color: #282945;
+   }
+   
+}
+/*media for nav---------------------------------*/
+
+
+.head .head-txt h1{
+   font-style: italic;
+font-size: 100px;
+font-family: sans-serif;
+color: #2a14a7;
+font-weight: 700;
+text-transform: uppercase;
+}
+.head .head-txt h2{
+   font-style: italic;
+color: #202030;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 40px;
+text-transform: uppercase;
+font-weight: 500;
+}
+.head-txt h3{
+   
+color: rgb(63, 99, 100);
+font-size: 20px;
+font-weight: 600;
+}
+.head .head-txt h4{
+color: rgb(22, 21, 82);
+font-family: 'Dosis', sans-serif;
+font-size: 25px;
+}
+.vdo-side video{
+border-radius: 50px;
+}
+.head{
+   margin-left: 20px;
+   margin-top: 30px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+   justify-content: center;
+}
+.head-txt button{
+   margin-top: 50px;
+   margin-left: 30px;
+background-color:#140552;
+color: white;
+font-size: 20px;
+text-transform: uppercase;
+padding: 6px;
+padding-left: 20px;
+padding-right: 20px;
+border-radius: 10px;
+font-family: 'Bebas Neue', cursive;
+}
+.head .head-txt #sin{
+   background-color: rgb(223, 197, 197);
+   color: rgb(31, 8, 85);
+}
+.head-txt button:hover{
+   transition: 1s;
+   background-color: rgb(245, 236, 236);
+   color: navy;
+}
+.head-txt #sin:hover{
+transition: 1s;
+background-color: #140552;
+color: white;
+}
+/*ui page vdo end----------------------------------*/
+@media(max-width:768px){
+.head .head-txt h1{
+margin-top: 20px;
+font-size: 60px;
+text-align: center;
+}
+.head .head-txt h4{
+font-size: 15px;
+text-align: center;
+}
+.head .head-txt h2{
+line-height: 60px;
+font-size: 25px;
+text-align: center;
+}
+.head .head-txt h3{
+text-align: center;
+}
+ .head .head-txt button{
+   justify-self: center;
+   margin-left: 60px;
+   margin-top: 100px;
+ }  
+ .vdo-side video{
+   height: 300px;
+   margin-top: 100px;
+   justify-content: center;
+   border-radius: 50px;
+ }
+ 
+}
+/*media for vdo tags---------------------------------*/
+.center{
+padding-bottom: 50px;
+}
+
