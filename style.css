@@ -66,6 +66,8 @@ height: 50px;
    }
    .nav-icons{
       background-color: #282945;
+      width: 378px;
+   
    }
    
 }
@@ -102,11 +104,16 @@ font-size: 25px;
 .vdo-side video{
 border-radius: 50px;
 }
+.ceo{
+   margin-top: 50px;
+   margin-left: 40px;
+width: 300px;
+}
 .head{
    margin-left: 20px;
    margin-top: 30px;
    display: grid;
-   grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
    justify-content: center;
 }
 .head-txt button{
@@ -122,6 +129,7 @@ padding-right: 20px;
 border-radius: 10px;
 font-family: 'Bebas Neue', cursive;
 }
+
 .head .head-txt #sin{
    background-color: rgb(223, 197, 197);
    color: rgb(31, 8, 85);
@@ -144,7 +152,7 @@ font-size: 60px;
 text-align: center;
 }
 .head .head-txt h4{
-font-size: 15px;
+font-size: 14px;
 text-align: center;
 }
 .head .head-txt h2{
@@ -155,18 +163,29 @@ text-align: center;
 .head .head-txt h3{
 text-align: center;
 }
+.head .head-txt .ceo{
+   margin: auto;
+   margin-left: 50px;
+   margin-top: 50px;
+}
  .head .head-txt button{
    justify-self: center;
-   margin-left: 60px;
+   margin-left: 30px;
    margin-top: 100px;
+   font-family: verdana;
  }  
  .vdo-side video{
-   height: 300px;
+   height: 350px;
    margin-top: 100px;
    justify-content: center;
    border-radius: 50px;
+   width: 300px;
+   margin: auto;
  }
- 
+ .head .head-txt.ceo{
+   margin-left: 0px;
+   margin-right: 10px;
+ }
 }
 /*media for vdo tags---------------------------------*/
 .center{
